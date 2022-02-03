@@ -21,7 +21,8 @@
   </property>
   <property name="windowIcon">
    <iconset resource="Paleta.qrc">
-    <normaloff>:/new/prefix2/logomwindows</normaloff>:/new/prefix2/logomwindows</iconset>
+    <normaloff>:/new/prefix2/logomwindows</normaloff>
+    <disabledoff>:/new/prefix2/logomwindows</disabledoff>:/new/prefix2/logomwindows</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
