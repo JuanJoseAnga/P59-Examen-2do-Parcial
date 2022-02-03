@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file alias="paletass">Resources/Captura de pantalla 2022-02-02 182718.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix2">
+        <file alias="logomwindows">Resources/klipartz.com (3).png</file>
+    </qresource>
+    <qresource prefix="/new/prefix3"/>
+</RCC>

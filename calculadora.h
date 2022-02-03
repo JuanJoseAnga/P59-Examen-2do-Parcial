@@ -15,9 +15,6 @@ public:
     const QString &peso() const;
     void setPeso(const QString &newPeso);
 
-
-
-
     float altura() const;
     void setAltura(float newAltura);
     const QString &getFecha() const;

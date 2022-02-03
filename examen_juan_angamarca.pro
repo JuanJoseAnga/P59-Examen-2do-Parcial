@@ -20,7 +20,18 @@ HEADERS += \
 FORMS += \
     calculadoraimc.ui
 
+TRANSLATIONS = \
+    calculadoraimc_ca.ts
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Paleta.qrc
+
+
+DISTFILES += \
+    Resources/Captura de pantalla 2022-02-02 182718.png \
+    calculadoraimc_ca.qm

@@ -16,6 +16,7 @@ void CalculadoraImc::on_pushButton_released()
 {
     datos();
     impresion();
+    clasificador();
 }
 void CalculadoraImc::datos()
 {
@@ -26,23 +27,32 @@ void CalculadoraImc::datos()
 
 }
 
-void CalculadoraImc::archivoAC()
+void CalculadoraImc::clasificador()
 {
-    /*
-    QString nombre="C:/Users/juanf/Documents/UNIVERSIDAD UPS/SEMESTRE 2/PROGRAMACION.csv";
-    QFile archivo;
-    QTextStream as;
-    archivo.setFileName(nombre);
-    archivo.open(QIODevice::ReadOnly | QIODevice::Text);
-    if(!archivo.isOpen()){
-        return;
-    }
-    QString fecha;
-    QString altura;
-    QString peso;
 
-    as.setDevice(&archivo);
-    */
+    QString nombre="../arhivo.txt";
+    QFile archivo(nombre);
+
+    archivo.setFileName(nombre);
+    if(archivo.exists()){
+        archivo.open(QIODevice::ReadOnly | QIODevice::Text);
+        if(!archivo.open(QFile::ReadOnly|QFile::Text)){
+
+            QTextStream as(&archivo);
+            QString fecha;
+            QString altura;
+            QString peso;
+            while(!as.atEnd()){
+                auto ss = as.readLine();
+                auto tt = ss.split(";");
+                fecha=tt[0];
+                altura=tt[1];
+                peso=tt[2];
+                m_informacion.append(new Calculadora(peso,altura.toDouble(),fecha));
+            }
+        }
+        datos();
+    }
 }
 
 void CalculadoraImc::impresion()
@@ -62,6 +72,10 @@ void CalculadoraImc::impresion()
         }
     }
     ui->outIMC->setText(QString::number(imcUltimo, 'f',2));
+}
+
+void CalculadoraImc::guardar()
+{
 }
 
 

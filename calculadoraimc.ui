@@ -6,12 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>472</width>
-    <height>655</height>
+    <width>480</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>CalculadoraImc</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Paleta.qrc">
+    <normaloff>:/new/prefix2/logomwindows</normaloff>:/new/prefix2/logomwindows</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -27,7 +37,7 @@
      <string notr="true"/>
     </property>
     <property name="title">
-     <string>Identificacion:</string>
+     <string>                           UNIVERSIDAD POLITECNICA SALESIANA</string>
     </property>
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
@@ -47,7 +57,7 @@
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Cédlua: 1751065754</string>
+        <string>Cédula: 1751065754</string>
        </property>
       </widget>
      </item>
@@ -78,7 +88,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Peso Actual (Gr): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Peso Actual (Kg): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -185,7 +195,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Su altura es (cm):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Su altura es (m):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton">
@@ -238,7 +248,7 @@
       <x>10</x>
       <y>370</y>
       <width>451</width>
-      <height>171</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -281,6 +291,60 @@
      </property>
     </widget>
    </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>470</y>
+      <width>21</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>470</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/prefix1/paletass&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>520</y>
+      <width>411</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15        16         18.5           25              30           35                  40</string>
+    </property>
+   </widget>
+   <zorder>label_9</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>line</zorder>
+   <zorder>label_10</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionProde_no_me_deje_de_semestre">
@@ -289,6 +353,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Paleta.qrc"/>
+ </resources>
  <connections/>
 </ui>
