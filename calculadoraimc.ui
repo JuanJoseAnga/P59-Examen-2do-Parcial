@@ -78,32 +78,6 @@
     <property name="title">
      <string>Calculadora de IMC</string>
     </property>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>131</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Peso Actual (Kg): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>141</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Ingrese la fecha: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
     <widget class="QDateEdit" name="inFecha">
      <property name="geometry">
       <rect>
@@ -123,32 +97,6 @@
        <height>151</height>
       </rect>
      </property>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>131</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Peso mínimo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Peso máximo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="outPesomax">
       <property name="geometry">
        <rect>
@@ -185,19 +133,6 @@
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0.00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>80</y>
-        <width>161</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Su altura es (m):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
@@ -209,6 +144,10 @@
       </property>
       <property name="text">
        <string>CALCULAR IMC</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Paleta.qrc">
+        <normaloff>:/new/prefix2/logomwindows</normaloff>:/new/prefix2/logomwindows</iconset>
       </property>
      </widget>
      <widget class="QDoubleSpinBox" name="inAltura">
@@ -222,6 +161,45 @@
       </property>
       <property name="maximum">
        <double>2.990000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Su altura (m) es:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>56</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Peso máximo es:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Su peso mínimo es:</string>
       </property>
      </widget>
     </widget>
@@ -241,6 +219,32 @@
       <double>109.989999999999995</double>
      </property>
     </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Peso actual es (Kg) :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>45</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ingrese la fecha:</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
@@ -257,19 +261,6 @@
     <property name="title">
      <string>RESULTADOS:</string>
     </property>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>191</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Su IMC (Kg / m^2): &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="outIMC">
      <property name="geometry">
       <rect>
@@ -290,13 +281,26 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0.00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Su IMC  (Kg/m^2) es:</string>
+     </property>
+    </widget>
    </widget>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
       <x>220</x>
       <y>470</y>
-      <width>21</width>
+      <width>16</width>
       <height>51</height>
      </rect>
     </property>

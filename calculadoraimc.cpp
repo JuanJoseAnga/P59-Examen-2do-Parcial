@@ -1,3 +1,9 @@
+/*
+ * Nombre: Juan Jose Angamarca
+ * Cédula: 1751065754
+ * Fecha: 02/02/2022
+ * Grupo 3 POO
+ */
 #include "calculadoraimc.h"
 #include "ui_calculadoraimc.h"
 
@@ -6,6 +12,7 @@ CalculadoraImc::CalculadoraImc(QWidget *parent)
     , ui(new Ui::CalculadoraImc)
 {
     ui->setupUi(this);
+    clasificador();
 }
 
 CalculadoraImc::~CalculadoraImc()
@@ -16,7 +23,8 @@ void CalculadoraImc::on_pushButton_released()
 {
     datos();
     impresion();
-    clasificador();
+    guardar();
+
 }
 void CalculadoraImc::datos()
 {
@@ -32,7 +40,7 @@ void CalculadoraImc::clasificador()
 
     QString nombre="../arhivo.txt";
     QFile archivo(nombre);
-
+    name=nombre;
     archivo.setFileName(nombre);
     if(archivo.exists()){
         archivo.open(QIODevice::ReadOnly | QIODevice::Text);
@@ -53,6 +61,7 @@ void CalculadoraImc::clasificador()
         }
         datos();
     }
+
 }
 
 void CalculadoraImc::impresion()
@@ -76,6 +85,16 @@ void CalculadoraImc::impresion()
 
 void CalculadoraImc::guardar()
 {
+    QString data="";
+    foreach(Calculadora *fi,m_informacion){
+        data+=fi->getFecha()+" ; "+QString::number(fi->altura(), 'f',2)+";"+fi->peso()+"\n";
+    }
+
+    QFile archivo(name);
+    if(archivo.open(QFile::WriteOnly)){
+        archivo.write(data.toUtf8());
+    }
+    archivo.close();
 }
 
 

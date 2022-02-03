@@ -6,4 +6,7 @@
         <file alias="logomwindows">Resources/klipartz.com (3).png</file>
     </qresource>
     <qresource prefix="/new/prefix3"/>
+    <qresource prefix="/">
+        <file>calculadoraimc_ca.qm</file>
+    </qresource>
 </RCC>

@@ -1,3 +1,10 @@
+/*
+ * Nombre: Juan Jose Angamarca
+ * Cédula: 1751065754
+ * Fecha: 02/02/2022
+ * Grupo 3 POO
+ **/
+
 #ifndef CALCULADORAIMC_H
 #define CALCULADORAIMC_H
 
@@ -24,6 +31,8 @@ public:
 
     void impresion();
     void guardar();
+    QString name;
+    QString almacen;
 
 private slots:
     void on_pushButton_released();

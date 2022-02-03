@@ -1,3 +1,9 @@
+/*
+ * Nombre: Juan Jose Angamarca
+ * Cédula: 1751065754
+ * Fecha: 02/02/2022
+ * Grupo 3 POO
+ */
 #include "calculadora.h"
 
 Calculadora::Calculadora(QObject *parent) : QObject(parent)
